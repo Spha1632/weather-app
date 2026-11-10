@@ -1,4 +1,16 @@
+:root {
+  --primary-color: #0B131E;
+  --secondary-color: #202B3B;
+  --text-color: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: crimson;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
