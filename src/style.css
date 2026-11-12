@@ -10,6 +10,11 @@
   --title-color-2: #B9B6BF;
 }
 
+@font-face {
+  font-family: norse-font;
+  src: url(./norse-font/Norse.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +23,59 @@
 
 body {
   background-color: var(--background);
+  color: var(--white);
   width: 100dvw;
   height: 100dvh;
   padding: 24px 150px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  color: var(--white);
+  align-items: center;
+}
+
+header .logo {
+  font-family: norse-font;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+header .search-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding: 4px 8px;
+  outline: 1px solid var(--primary);
+}
+
+.search-bar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 32px;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.search-form:focus-within {
+  outline: 1px solid var(--outline);
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-form button svg {
+  fill: var(--white);
 }
