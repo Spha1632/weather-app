@@ -28,6 +28,7 @@ body {
   height: 100dvh;
   padding: 24px 150px;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 100dvw;
 }
 
 
@@ -78,4 +79,200 @@ header .search-form {
 
 .search-form button svg {
   fill: var(--white);
+}
+
+main {
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 16px;
+}
+
+.top-left-content,
+.card-item {
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+.top-left-content {
+  padding: 14px;
+}
+.bottom-left-content {
+  padding-top: 16px;
+}
+
+.heading {
+  margin-bottom: 8px;
+}
+
+.current-forecast > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.current-temp {
+  grid-column: span 4;
+}
+
+.current-info-div {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.current-temp .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 4px;
+}
+
+.current-info-div p {
+  font-size: 3.6rem;
+}
+
+.current-temp,
+.sunrise-sunset,
+.weather-condition {
+  background-color: var(--card-bg);
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid var(--outline);
+}
+
+.title {
+  color: var(--title-color);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.card-item {
+  padding: 12px;
+  text-align: center;
+}
+
+.right-content {
+  background-color: var(--primary);
+  padding: 12px;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+
+.right-content h3 {
+  margin-bottom: 12px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid var(--outline);
+  margin-bottom: 12px;
+}
+
+.sunrise .title,
+.sunset .title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.sunrise,
+.sunset {
+  display: flex;
+  align-items: center;
+}
+
+
+.sunrise-sunset-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.current-date {
+  color: var(--title-color-2);
+  margin-bottom: 8px;
+}
+
+.current-info .temp {
+  font-size: 3.6rem;
+}
+
+.current-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra-info {
+  color: var(--title-color-2);
+  text-align: right;
+}
+
+.sunrise-sunset .icon img {
+  width: 80px;
+}
+
+.weather-condition img {
+  width: 30px;
+}
+
+.weather-condition .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.weather-condition .info div {
+  display: flex;
+  align-items: center;
+}
+
+.card-item .time{
+  margin-bottom: 5px;
+}
+
+.card-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.card-item .temp {
+  font-size: 1.1rem;
+}
+
+.list-items .list-item img {
+  height: 20px;
+  width: 40px;
+}
+
+.right {
+ display: flex; 
+ gap: 8px;
+}
+
+.right > button {
+  width: 50px;
+  font-size: 2.1rem;
+  font-weight: 900;
+  background: none;
+  color: var(--white);
+  border: 1px solid var(--outline);
+  border-radius: 5px;
 }
